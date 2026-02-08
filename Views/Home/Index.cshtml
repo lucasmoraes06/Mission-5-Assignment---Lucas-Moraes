@@ -1,8 +1,39 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="row align-items-center g-4">
+    <div class="col-lg-7">
+        <h1 class="display-5 fw-bold">Playing Soccer</h1>
+        <p class="lead">
+            Soccer is my favorite hobby because it’s competitive, social, and always pushes me to improve.
+            I love how it blends endurance, speed, strategy, and teamwork.
+        </p>
+
+        <p>
+            One of the best parts of soccer is how there’s always something to work on—first touch, passing,
+            finishing, defending, positioning, and decision-making under pressure.
+        </p>
+
+        <p>
+            Beyond skills, soccer is great for mental toughness. You learn to stay calm, communicate clearly,
+            and adapt quickly when the game changes. Whether it’s a casual pickup match or a serious game day,
+            it’s always a good time.
+        </p>
+
+        <a class="btn btn-primary btn-lg" asp-controller="Home" asp-action="Calculator">
+            Estimate Tutoring Cost
+        </a>
+    </div>
+
+    <div class="col-lg-5">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h2 class="h5 mb-3">Game Day Vibes</h2>
+
+                <img src="~/images/soccer1.png" class="hobby-img mb-3" alt="Soccer image 1" />
+                <img src="~/images/soccer2.png" class="hobby-img" alt="Soccer image 2" />
+            </div>
+        </div>
+    </div>
 </div>
